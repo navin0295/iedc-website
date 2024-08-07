@@ -75,7 +75,7 @@
                         <nav role="navigation" class="header-nav-menu-wrapper iedc-nav-menu">
                             <ul role="list" class="header-nav-menu-list">
                                 <li class="header-nav-list-item left">
-                                    <a href="#scrollToTopBtn" aria-current="page"
+                                    <a href="#" aria-current="page"
                                         class="header-nav-link iedc-nav-link iedc--current" data-aos="fade-up"
                                         data-aos-duration="1550">Home</a>
                                 </li>
@@ -102,12 +102,13 @@
 
                     </div>
                     <div class="header-right-side">
-                        <a href="/pricing" class="btn-primary small header-btn-hidde-on-mb iedc-inline-block"
-                            data-aos="fade-up" data-aos-duration="1700">
+                        <a href="newpage.html" class="btn-primary small header-btn-hidde-on-mb iedc-inline-block" data-aos="fade-up" data-aos-duration="1700">
                             <div class="position-absolute full btn-primary-bg"></div>
                             <div class="position-relative z-index-1">
                                 <div>Get started</div>
                             </div>
+                        </a>
+                    </div>
                         </a>
                         <a href="javascript:void(0);" onclick="hamfun()">
                             <div class="hamburger-menu-wrapper iedc-nav-button" data-aos="fade-up"
@@ -145,7 +146,7 @@
                                     data-aos-duration="1650">Achievements</a>
                             </li>
                             <li class="header-nav-list-item left">  
-                                 <a href="#mission" class="header-nav-link iedc-nav-link" data-aos="fade-up"
+                                 <a href="../mission" class="header-nav-link iedc-nav-link" data-aos="fade-up"
                                  data-aosduration="1700">Mission</a>                                 
                             </li>
                             <li class="header-nav-list-item left">  
@@ -173,7 +174,7 @@
         <div class="video-container">
             <div class="color-overlay"></div>
             <video autoplay loop muted>
-                <source src="images/Sequence 01_1 (1).mp4" type="video/mp4">
+                <source src="images/Sequence 01_1.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -207,7 +208,7 @@
         <div class="video-container">
             <div class="color-overlay"></div>
             <video autoplay loop muted>
-                <source src="images/Pexels_Videos_1722882_1.mp4" type="video/mp4">
+                <source src="images/Pexels_Videos_2611250.mp4" type="video/mp4">
             </video>
         </div>
     </section>
@@ -497,6 +498,15 @@
             navbar.classList.toggle(responsive_class_name)
         }
     </script>
+<script>
+    document.getElementById('home-link').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    });
+</script>
 
 </body>
 
